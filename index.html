@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Realtime Clock SpaceX</title>
+        <link type="text/css" rel="stylesheet" href="css/styles.css" />
+        <script src="js/main.js" defer></script>
+    </head>
+    <body onload="startTime(), tijdzone(), datum()">
+       <main>
+          <img id="sleep" class="sleep" src="images/sleep.png"><!-- Slapende astronaut -->
+          <img id="astronaut" class="astronaut" src="images/astronaut.png"><!-- Astronaut overdag -->
+          <img id="zzz" class="slaapwolk" src="images/zzz.png" /> <!-- zZzzzz -->
+           <section class="container">
+               <section class="greeting">
+                   <div id="greetingText" class="greetingText"></div>
+                   <div id="greetingP" class="dagdeelp"></div>
+               </section>
+               <section class="uren">
+                   <div id="uren"></div><br/>
+                   <p>hours</p>
+               </section>
+               <section class="minuten">
+                   <div id="minuten"></div><br/>
+                   <p>minutes</p>
+               </section>
+               <section class="seconden">
+                   <div id="seconden"></div><br/>
+                   <p>seconds</p>
+               </section>
+               <section class="datum">
+                   <div id="datum"></div>
+               </section>
+               <section class="toonGMT">
+                   <div id="tijd"></div>
+                   <select id="tijdzones">
+                      <option value="keuze">Select your timezone</option>
+                      <option value="ams">Amsterdam CET (+1)</option>
+                      <option value="bej">Bejing CST (+8)</option>
+                      <option value="chicago">Chicago CDT (-5)</option>
+                   </select>
+               </section>
+           </section>
+       </main>
+    </body>
+</html>
